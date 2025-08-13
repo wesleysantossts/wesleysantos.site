@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Wesley Santos - Portfolio
 
-## Getting Started
+> **Moldando o Futuro através de linhas de código**
 
-First, run the development server:
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://www.wesleysantos.site/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/wesleysantos)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:contato@wesleysantos.site)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 👨‍💻 Sobre Mim
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Desenvolvedor Back-End com **3+ anos** entregando soluções robustas em **Node.js/TypeScript**, **PostgreSQL/MongoDB**, **Redis** e **Docker**, com **AWS** e **CI/CD** seguros.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Criação de automações de processos, integrações **REST** e otimização de performance e uso de **IA (Gemini/ChatGPT)** para acelerar resultados.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Perfil proativo e orientado a métricas de negócio, unindo qualidade técnica e **impacto real no cliente**.
 
-## Learn More
+## 🛠️ Stack Tecnológica
 
-To learn more about Next.js, take a look at the following resources:
+### Backend & Databases
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Frontend & Frameworks
 
-## Deploy on Vercel
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### DevOps & Cloud
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+
+### IA & Automação
+
+![Google Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat&logo=google&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-00A67E?style=flat&logo=openai&logoColor=white)
+
+## 🎯 Diferenciais
+
+- ✅ **Soluções Robustas**: Arquiteturas escaláveis e performáticas
+- ✅ **Automação Inteligente**: Processos otimizados com IA
+- ✅ **Infraestrutura Segura**: CI/CD e boas práticas de segurança
+- ✅ **Visão de Negócio**: Foco em resultados e impacto real
+- ✅ **Tecnologias Modernas**: Stack atualizada e em constante evolução
+
+## 📊 Resultados Entregues
+
+- 🚀 **Performance**: Otimizações que reduziram tempo de resposta em até 70%
+- 🔒 **Segurança**: Implementação de práticas que garantem proteção de dados
+- ⚡ **Automação**: Processos automatizados que economizam horas de trabalho manual
+- 🌐 **Integrações**: APIs REST robustas conectando sistemas complexos
+
+## 🌐 Acesse Meu Portfolio
+
+**[👉 www.wesleysantos.site](https://www.wesleysantos.site/)**
+
+Explore meus projetos, tecnologias e entre em contato para discutirmos como posso agregar valor ao seu time!
+
+---
+
+### 📞 Vamos Conversar?
+
+Estou sempre aberto a novos desafios e oportunidades de crescimento. Entre em contato!
+
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visitar-brightgreen?style=for-the-badge)](https://www.wesleysantos.site/)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Conectar-blue?style=for-the-badge)](https://linkedin.com/in/wesleysantos)
+[![Email](https://img.shields.io/badge/📧_Email-Contato-red?style=for-the-badge)](mailto:contato@wesleysantos.site)
+
+> _"Transformando ideias em código, código em soluções, soluções em resultados."_
