@@ -4,10 +4,10 @@ import { ApplicationThemeContextProvider } from "../contexts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wesley Santos | BackEnd Developer",
-  applicationName: "Wesley Santos | BackEnd Developer",
+  title: "Wesley Santos | Back-End Developer",
+  applicationName: "Wesley Santos | Back-End Developer",
   description:
-    "Me chamo Wesley Santos, atuo no backend com Node.js, priorizando arquitetura limpa, performance e segurança para sustentar produtos de alta qualidade.",
+    "Me chamo Wesley Santos, atuo no back-end com Node.js, priorizando arquitetura limpa, performance e segurança para sustentar produtos de alta qualidade.",
   creator: "Wesley Santos",
   publisher: "Wesley Santos",
   robots: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Desenvolvedor de Software",
     "wesleysantos.site",
     "Wesley Santos",
-    "BackEnd Developer",
+    "Back-End Developer",
     "Node",
     "Express",
     "Nestjs",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "wesleysantos",
     "dev",
     "Programador",
-    "Desenvolvedor BackEnd",
+    "Desenvolvedor Back-End",
     "Desenvolvedor Santos",
     "Desenvolvedor Baixada Santista",
     "BackEnd",

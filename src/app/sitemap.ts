@@ -6,9 +6,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://wesleysantos.site",
       lastModified: new Date(),
     },
-    {
-      url: "https://www.wesleysantos.site",
-      lastModified: new Date(),
-    },
   ];
 }
