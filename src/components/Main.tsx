@@ -2,12 +2,11 @@
 import TypeWriterEffect from "typewriter-effect";
 
 import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
 
 export function Main() {
   const stringsTypeWriter = [
     "Wesley Santos",
-    "Santista",
     "Desenvolvedor Back-End",
   ];
 
@@ -41,7 +40,7 @@ export function Main() {
             de processos, infraestrutura em nuvem e boas práticas de segurança e CI/CD.
           </p>
 
-          <section className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <section className="flex items-center justify-around max-w-[330px] m-auto py-4">
             <a
               target="_blank"
               rel="noreferrer nofollow"
@@ -71,6 +70,17 @@ export function Main() {
               className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
             >
               <AiOutlineMail />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer nofollow"
+              title="Currículo - Wesley Santos"
+              aria-label="Curriculo"
+              href="/assets/documents/CV - Wesley Santos.pdf"
+              download={true}
+              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+            >
+              <FaFilePdf />
             </a>
           </section>
         </div>
