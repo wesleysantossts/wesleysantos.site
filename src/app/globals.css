@@ -1,29 +1,130 @@
 @import "tailwindcss";
 
-@tailwind utilities;
+@theme {
+  --color-ink: #0a0a0a;
+  --color-ink-2: #111110;
+  --color-ink-3: #18181a;
+  --color-bone: #e8e6e1;
+  --color-bone-dim: #a8a59d;
+  --color-bone-mute: #6b6860;
+  --color-line: #1f1f1e;
+  --color-line-2: #2a2a28;
+  --color-acid: #7cff9e;
+  --color-ember: #ff9b52;
+
+  --font-display: var(--font-display), "Times New Roman", serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui;
+  --font-mono: var(--font-mono), ui-monospace, monospace;
+}
 
 @layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    background: var(--color-ink);
+    color: var(--color-bone);
+  }
+
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937]
+    font-family: var(--font-sans);
+    background: var(--color-ink);
+    color: var(--color-bone);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-acid);
+    color: var(--color-ink);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-sans { font-family: var(--font-sans); }
+  .font-mono { font-family: var(--font-mono); }
+
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  /* Grid paper background */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
   }
 
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl
+  /* Film grain */
+  .bg-noise {
+    position: relative;
+  }
+  .bg-noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 
-  h2 {
-    @apply text-3xl sm:text-4xl
+  /* Radial vignette that lights the hero */
+  .bg-halo {
+    background:
+      radial-gradient(120% 80% at 50% 0%, rgba(124, 255, 158, 0.08), transparent 60%),
+      radial-gradient(60% 40% at 100% 100%, rgba(255, 155, 82, 0.06), transparent 60%);
   }
 
-  li {
-    @apply cursor-pointer
+  .hairline { border-color: var(--color-line); }
+
+  .scroll-smooth-y { scroll-behavior: smooth; }
+
+  /* Marquee */
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
   }
 
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#0070f3] to-[#5651e5]
+  /* Blink cursor for typewriter */
+  @keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
   }
+  .animate-blink { animation: blink 1s steps(1) infinite; }
+
+  /* Slow pulse used on the hero status dot */
+  @keyframes pulse-soft {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50%      { opacity: 1;   transform: scale(1.2); }
+  }
+  .animate-pulse-soft { animation: pulse-soft 2.4s ease-in-out infinite; }
+
+  /* Scroll hint */
+  @keyframes scroll-hint {
+    0%   { transform: translateY(0); opacity: 0; }
+    40%  { opacity: 1; }
+    100% { transform: translateY(10px); opacity: 0; }
+  }
+  .animate-scroll-hint { animation: scroll-hint 1.8s ease-in-out infinite; }
+
+  /* Scan line for the project cards */
+  @keyframes scan {
+    0%   { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+  .group:hover .group-hover\:animate-scan { animation: scan 1.6s ease-in-out infinite; }
 }

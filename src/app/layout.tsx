@@ -1,9 +1,29 @@
 import { ReactNode } from "react";
+import { Fraunces, Inter_Tight, JetBrains_Mono } from "next/font/google";
 
 import { ApplicationThemeContextProvider } from "../contexts";
 import type { Metadata } from "next";
 
 import "./globals.css";
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-display",
+  axes: ["opsz", "SOFT", "WONK"],
+  display: "swap",
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Wesley Santos | Back-End Developer",
@@ -54,7 +74,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt-br">
+    <html
+      lang="pt-br"
+      className={`${fraunces.variable} ${interTight.variable} ${jetbrains.variable}`}
+    >
       <body>
         <ApplicationThemeContextProvider>
           {children}
