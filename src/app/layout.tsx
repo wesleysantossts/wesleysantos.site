@@ -3,6 +3,8 @@ import { ReactNode } from "react";
 import { ApplicationThemeContextProvider } from "../contexts";
 import type { Metadata } from "next";
 
+import "./globals.css";
+
 export const metadata: Metadata = {
   title: "Wesley Santos | Back-End Developer",
   applicationName: "Wesley Santos | Back-End Developer",
