@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  output: "export",
+  pageExtensions: ["ts", "tsx", "md", "mdx"],
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  experimental: {
+    inlineCss: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
